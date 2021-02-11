@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Каталог одежды. Для одежды хранится категория, размер и цвет. Требуется реализовать возможность заказа. -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Font Awesome CSS 
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css" />-->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500&display=swap"
+        rel="stylesheet" />
+
+    <!-- My Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Администрирование товаров</title>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_new.png" alt="store-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products-administration.html">Администрирование товаров</a>
+                    </li>
+                </ul>
+                <div class="nav-shopping-bag">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fa fa-shopping-cart fa-fw"></i>
+                        <span class="hover">Корзина (</span>
+                        <span class="nav-shopping-bag__num-items">1</span>
+                        <span class="hover">)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Catalog -->
+    <section class="catalog-admin bg-light py-5">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <a href="#" class="btn btn-block btn-outline-none btn-add-new-item">
+                        <i class="fa fa-check fa-fw"></i>
+                        <span>Добавить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostindress.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Платье в рубчик</div>
+                                <div class="catalog__item-info-price">999&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostinshirt.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Рубашка из хлопка</div>
+                                <div class="catalog__item-info-price">599&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostintshirt.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Футболка с текстовым принтом «города»</div>
+                                <div class="catalog__item-info-price">799&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostindress.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Платье в рубчик</div>
+                                <div class="catalog__item-info-price">999&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostinshirt.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Рубашка из хлопка</div>
+                                <div class="catalog__item-info-price">599&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="catalog__item">
+                        <a href="single-product.html">
+                            <img src="img/products/ostintshirt.jpg" class="catalog__item-img" alt="item-pic">
+                        </a>
+                        <a href="single-product.html">
+                            <div class="catalog__item-info">
+                                <div class="catalog__item-info-name">Футболка с текстовым принтом «города»</div>
+                                <div class="catalog__item-info-price">799&#8381;</div>
+                            </div>
+                        </a>
+                        <div class="col">
+                            <a href="product-editing.html" class="btn btn-block btn-outline-none btn-edit-item">
+                                <i class="fa fa-pencil fa-fw"></i>
+                                <span>Изменить</span>
+                            </a>
+                            <a href="#" class="btn btn-block btn-outline-none btn-del-item">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                <span>Удалить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Catalog -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row pt-4 pb-2 justify-content-between">
+                <div class="col-2"> <img src="img/logo_new.png" alt="logo-store" /> </div>
+
+                <div class="col-5">
+                    <div class="nav justify-content-end">
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-facebook fa-fw"></i>
+                            <span class="network-name">Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Twitter</span>
+                        </a>
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-instagram fa-fw"></i>
+                            <span class="network-name">Instagram</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>© ООО «VAV Clothing Store» 2021. Все права защищены.</p>
+                    <p>Юридический адрес: ул. Пушкина, д. Колотушкина</p>
+                    <p>Указанная стоимость товаров и условия их приобретения действительны по состоянию на текущую дату.
+                    </p>
+                </div>
+                <div class="col-6 text-right">
+                    <nav class="nav justify-content-end">
+                        <a class="nav-link" href="#">Работа</a>
+                        <a class="nav-link" href="#">Частые вопросы</a>
+                        <a class="nav-link" href="#">Условия</a>
+                        <a class="nav-link" href="#">Публичная оферта</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

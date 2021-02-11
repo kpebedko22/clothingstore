@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Font Awesome CSS 
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.min.css" />-->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500&display=swap"
+        rel="stylesheet" />
+
+    <!-- My Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Оформление заказа</title>
+</head>
+
+<body>
+
+    <!-- Cart Header -->
+    <div class="container pt-5">
+        <div class="row cart mb-3">
+            <div class="col text-center">
+                <h3>Оформление заказа</h3>
+                <p>Убедитесь в выбранных товарах до оформления заказа</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Cart Header -->
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <nav>
+            <ol class="breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <section class="checkout">
+        <div class="container pb-5">
+            <div class="row mb-5 justify-content-between">
+                <div class="col-lg-7">
+                    <h5 class="mb-4">Выбранные товары</h5>
+
+                    <!-- Items -->
+                    <div class="checkout__item">
+                        <div class="row">
+                            <div class="col-4 col-sm-4 col-md-4 ">
+                                <img class="img-fluid" src="img/products/ostintshirt.jpg" alt="item-1">
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-8 mt-1">
+                                <div class="checkout__item-header">
+                                    <div class="checkout__item-header-name">Футболка с текстовым принтом «города»</div>
+                                    <div class="checkout__item-header-btn-delete text-right">
+                                        <a href="#" class="btn-delete" role="button">
+                                            <i class="fa fa-trash-o fa-lg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="checkout__item-details">
+                                    <div class="checkout__item-details-label">
+                                        <span class="checkout__item-details-label-text">Размер: </span>
+                                    </div>
+                                    <div class="checkout__item-details-size-value">XS</div>
+                                </div>
+                                <div class="checkout__item-details">
+                                    <div class="checkout__item-details-label">
+                                        <span class="checkout__item-details-label-text">Цвет: </span>
+                                    </div>
+                                    <div class="checkout__item-details-color-value">слоновая кость</div>
+                                </div>
+                                <div class="checkout__item-details">
+                                    <div class="checkout__item-details-label">
+                                        <span class="checkout__item-details-label-text">Цена: </span>
+                                    </div>
+                                    <div class="checkout__item-details-price-value">799&#8381;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Items End -->
+
+                </div>
+
+                <div class="col-lg-5">
+                    <h5 class="mb-4">Общая стоимость</h5>
+                    <div class="checkout__summary">
+                        <div class="checkout__summary-line">
+                            <div class="checkout__summary-line-label">1 товар на сумму</div>
+                            <div class="checkout__summary-line-value">799&#8381;</div>
+                        </div>
+                        <div class="checkout__summary-line">
+                            <div class="checkout__summary-line-label">Доставка</div>
+                            <div class="checkout__summary-line-value">Бесплатно</div>
+                        </div>
+                        <hr>
+                        <div class="checkout__summary-line">
+                            <div class="checkout__summary-line-label">Всего к оплате</div>
+                            <div class="checkout__summary-line-value">799&#8381;</div>
+                        </div>
+                    </div>
+                    <h5 class="mb-4">Контактные данные</h5>
+                    <div class="checkout__contacts">
+                        <form action="">
+                            <span class="checkout__contacts-field">
+                                <input type="text" class="form-control btn-outline-none" id="name" placeholder="Имя" required>
+                            </span>
+                            <span class="checkout__contacts-field">
+                                <input type="tel" class="form-control btn-outline-none" id="phone" placeholder="Телефон" required>
+                            </span>
+                            <span class="checkout__contacts-field">
+                                <input type="email" class="form-control btn-outline-none" id="email" placeholder="E-mail" required>
+                            </span>
+                            <span>
+                                <button type="submit" class="btn btn-block btn-outline-none btn-checkout-order">
+                                    <i class="fa fa-check fa-fw"></i>
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row pt-4 pb-2 justify-content-between">
+                <div class="col-2"> <img src="img/logo_new.png" alt="logo-store" /> </div>
+
+                <div class="col-5">
+                    <div class="nav justify-content-end">
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-facebook fa-fw"></i>
+                            <span class="network-name">Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="network-name">Twitter</span>
+                        </a>
+                        <a href="#" class="btn btn-default btn-lg nav-link">
+                            <i class="fa fa-instagram fa-fw"></i>
+                            <span class="network-name">Instagram</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>© ООО «VAV Clothes Shop» 2021. Все права защищены.</p>
+                    <p>Юридический адрес: ул. Пушкина, д. Колотушкина</p>
+                    <p>Указанная стоимость товаров и условия их приобретения действительны по состоянию на текущую дату.
+                    </p>
+                </div>
+                <div class="col-6 text-right">
+                    <nav class="nav justify-content-end">
+                        <a class="nav-link" href="#">Работа</a>
+                        <a class="nav-link" href="#">Частые вопросы</a>
+                        <a class="nav-link" href="#">Условия</a>
+                        <a class="nav-link" href="#">Публичная оферта</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
